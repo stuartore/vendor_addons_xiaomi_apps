@@ -7,19 +7,19 @@ Contain Xiaomi Push on non-MIUI systems as well as Huawei Appmarket on non-Huawe
 
 $(call inherit-product, vendor/adddon/xiaomi/apps/config.mk)
 ```
-#### 我需要小米推送(XiaomiPush)
+##### ● 我需要小米推送(XiaomiPush)
 ```
 TARGET_ADD_XIAOMI_PUSH := true
 ```
-#### 我需要华为应用市场(Huawei AppMarket) - 不工作
+##### ● 我需要华为应用市场(Huawei AppMarket) - 不工作
 ```
 TARGET_ADD_HUAWEI_APPMARKET := true
 ```
-#### 我需要Moto全家桶(Moto Apps)
+##### ● 我需要Moto全家桶(Moto Apps)
 ```
 TARGET_ADD_MOTO_SUITES := true
 ```
-上方选项会忽视下方的单独配置
+> 上方选项会忽视下方的单独配置  
 + 我需要Moto计算器(MotoCalculator)
 ```
 TARGET_ADD_MOTO_CALCULATOR := true
