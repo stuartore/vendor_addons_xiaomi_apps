@@ -1,0 +1,67 @@
+android_app_import {
+	name: "XiaomiPush",
+	apk: "XiaomiPush/com.xiaomi.xmsf.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "HuaweiAppMarket",
+	owner: "xiaomi",
+	apk: "HuaweiAppmarket/com.huawei.appmarket.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+// moto suites
+android_app_import {
+	name: "MotoCalculator",
+	apk: "MotoCalculator/MotoCalculator.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MotoCalendar",
+	apk: "MotoCalendar/MotoCalendar.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MotoPhoto",
+	apk: "MotoPhoto/MotoPhoto.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "MotoNotes",
+	apk: "MotoNotes/MotoNotes.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
