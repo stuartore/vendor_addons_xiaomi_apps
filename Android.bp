@@ -1,7 +1,8 @@
 android_app_import {
 	name: "XiaomiPush",
 	apk: "XiaomiPush/com.xiaomi.xmsf.apk",
-	presigned: true,
+	presigned: false,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -64,4 +65,14 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+// via browser
+android_app_import {
+        name: "ViaBrowser",
+        dex_preopt: {
+            enabled: false,
+        },
+        apk: "ViaBrowser/ViaBrowser.apk",
+        presigned: true,
 }

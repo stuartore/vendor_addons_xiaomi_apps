@@ -92,3 +92,9 @@ PRODUCT_PACKAGES += \
 	MotoNotes
 	endif
 endif
+
+# ViaBrowser
+ifeq ($(TARGET_ADD_VIA_BROWSER),true)
+PRODUCT_PACKAGES += \
+    ViaBrowser
+endif
