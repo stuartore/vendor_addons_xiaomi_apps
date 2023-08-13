@@ -36,4 +36,7 @@ TARGET_ADD_MOTO_PHOTO := true
 ```
 TARGET_ADD_MOTO_NOTES := true
 ```
-
+##### ● 我需要Via浏览器(ViaBrowser)
+```
+TARGET_ADD_VIA_BROWSER := true
+```
