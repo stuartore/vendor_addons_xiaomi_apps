@@ -5,7 +5,7 @@ Contain Xiaomi Push on non-MIUI systems as well as Huawei Appmarket on non-Huawe
 ```
 # contain this line in your device tree
 
-$(call inherit-product, vendor/adddn/xiaomi/apps/config.mk)
+$(call inherit-product, vendor/addons/xiaomi/apps/config.mk)
 ```
 ##### ● 我需要小米推送(XiaomiPush)
 ```
