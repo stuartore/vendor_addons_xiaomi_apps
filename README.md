@@ -2,6 +2,7 @@
 Contain Xiaomi Push on non-MIUI systems as well as Huawei Appmarket on non-Huawei(or Honor) devices
 
 ## How-to
+复制下方两行到设备树`device.mk`
 ```
 # contain this line in your device tree
 
@@ -40,3 +41,7 @@ TARGET_ADD_MOTO_NOTES := true
 ```
 TARGET_ADD_VIA_BROWSER := true
 ```
+
+##### Credits
++ [SuperiorOS-devices](https://github.com/SuperiorOS-devices)
++ [MiPushFramework](https://github.com/NihilityT/MiPushFramework)
