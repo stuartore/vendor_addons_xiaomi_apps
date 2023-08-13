@@ -2,9 +2,10 @@
 Contain Xiaomi Push on non-MIUI systems as well as Huawei Appmarket on non-Huawei(or Honor) devices
 
 ## How-to
-复制下方两行到设备树`device.mk`
+复制下方两行到设备树`device.mk`  
+copy the following two lines to your device tree
 ```
-# contain this line in your device tree
+# Vendor addons
 
 $(call inherit-product, vendor/addons/xiaomi/apps/config.mk)
 ```
