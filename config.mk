@@ -20,6 +20,13 @@ PRODUCT_VENDOR_PROPERTIES += \
         ro.product.locale.region=CN \
         ro.product.locale.language=zh
 
+# MIUI version props - avoid repeate
+# PRODUCT_VENDOR_PROPERTIES += \
+#       ro.product.manufacturer=Xiaomi \
+#	ro.product.brand=Xiaomi \
+#	ro.product.name=Xiaomi \
+#	ro.product.locale=zh-CN
+
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/permissions/privapp-com.xiaomi.xmsf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-com.xiaomi.xmsf.xml \
 	$(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-whitelist-xiaomi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-package-whitelist-xiaomi.xml
