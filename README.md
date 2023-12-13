@@ -13,10 +13,6 @@ $(call inherit-product, vendor/addons/xiaomi/apps/config.mk)
 ```
 TARGET_ADD_XIAOMI_PUSH := true
 ```
-##### ● 我需要华为应用市场(Huawei AppMarket) - 不工作
-```
-TARGET_ADD_HUAWEI_APPMARKET := true
-```
 ##### ● 我需要Moto全家桶(Moto Apps)
 ```
 TARGET_ADD_MOTO_SUITES := true
@@ -41,6 +37,10 @@ TARGET_ADD_MOTO_NOTES := true
 ##### ● 我需要Via浏览器(ViaBrowser)
 ```
 TARGET_ADD_VIA_BROWSER := true
+```
+##### ● 我需要NFC卡模拟(NFC Card Emulator)
+```
+TARGET_ADD_NFC_CARDEMULATOR := true
 ```
 
 ##### Credits
