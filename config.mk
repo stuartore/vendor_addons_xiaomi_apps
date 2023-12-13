@@ -35,42 +35,6 @@ PRODUCT_PACKAGES += \
 	XiaomiPush
 endif
 
-# Huawei Appmarket
-ifeq ($(TARGET_ADD_HUAWEI_APPMARKET),true)
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/permissions/privapp-com.huawei.appmarket.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-com.huawei.appmarket.xml \
-	$(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-whitelist-huawei.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig//hiddenapi-package-whitelist-huawei.xml \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libfb.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libfb.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libfb.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfb.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libnative-imagetranscoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnative-imagetranscoder.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libnative-imagetranscoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnative-imagetranscoder.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libhilog.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libhilog.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libhilog.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libhilog.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libimagepipeline.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libimagepipeline.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libimagepipeline.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimagepipeline.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libapms_ndk_anr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapms_ndk_anr.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libapms_ndk_anr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapms_ndk_anr.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libjslite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libjslite.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libjslite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libjslite.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libnative-filters.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnative-filters.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libnative-filters.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnative-filters.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libyoga.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libyoga.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libyoga.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libyoga.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libgifimage.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libgifimage.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libgifimage.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libgifimage.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libapppatch.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libapppatch.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libapppatch.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libapppatch.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libaegissec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libaegissec.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libaegissec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaegissec.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libstatic-webp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libstatic-webp.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libstatic-webp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libstatic-webp.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libscannative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libscannative.so \
-	$(LOCAL_PATH)/HuaweiAppmarket/lib64/libscannative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libscannative.so
-
-PRODUCT_PACKAGES += \
-	HuaweiAppMarket
-endif
-
 # Moto Apps
 ifeq ($(TARGET_ADD_MOTO_SUITES),true)
 PRODUCT_PACKAGES += \
@@ -104,4 +68,14 @@ endif
 ifeq ($(TARGET_ADD_VIA_BROWSER),true)
 PRODUCT_PACKAGES += \
     ViaBrowser
+endif
+
+# NFC CardEmulator
+ifeq ($(TARGET_ADD_NFC_CARDEMULATOR),true)
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/configs/permissions/privapp-com.yuanwofei.cardemulator.pro.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-com.yuanwofei.cardemulator.pro.xml \
+	$(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-whitelist-nfccardemulator.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-package-whitelist-nfccardemulator.xml
+
+PRODUCT_PACKAGES += \
+	NFCCardEmulator
 endif

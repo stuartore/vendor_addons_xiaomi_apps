@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.yuanwofei.cardemulator.pro">
+	<permission name="android.permission.NFC" />
+	<permission name="android.permission.INTERNET" />
+	<permission name="android.permission.ACCESS_NETWORK_STATE" />
+	<permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<permission name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    </privapp-permissions>
+</permissions>
